@@ -1,0 +1,96 @@
+site_name: Inferência Causal para Humanos
+site_url: https://resolvedortech.com.br/inferencia-causal-para-humanos
+site_description: Um guia prático para entender e aplicar inferência causal.
+
+theme:
+  name: material
+  logo: assets/imgs/logo.png
+  favicon: assets/imgs/logo.png
+  palette:
+    - scheme: default
+      primary: cyan
+      accent: cyan
+      toggle:
+        icon: material/toggle-switch-off-outline
+        name: Modo Claro
+    - scheme: slate
+      primary: cyan
+      accent: cyan
+      toggle:
+        icon: material/toggle-switch
+        name: Modo Escuro
+
+  features:
+      - navigation.path
+      - navigation.tracking
+      - navigation.sections
+      - navigation.expand
+      - toc.follow
+      - toc.integrate
+      - navigation.top
+      - search.suggest
+      - search.highlight
+      - search.share
+      - navigation.footer
+      - content.footnote.tooltips
+      - content.math.inline # for inline math
+      - content.math.block # for block math
+  language: pt-BR
+
+extra_css:
+  - assets/css/extra.css
+
+markdown_extensions:
+  - pymdownx.arithmatex
+  - pymdownx.snippets
+  - footnotes
+  - abbr
+  - admonition
+  - attr_list
+  - md_in_html
+  - pymdownx.blocks.caption
+  - footnotes
+  - pymdownx.details
+  - pymdownx.critic
+  - pymdownx.caret
+  - pymdownx.keys
+  - pymdownx.mark
+  - pymdownx.tilde
+  - pymdownx.superfences
+  - extra
+  - tables
+  - fenced_code
+  - pymdownx.arithmatex:
+      generic: true
+
+  
+  
+  
+
+plugins:
+  - search
+  - projects
+  - glightbox
+  - bibtex:
+      bib_file: refs.bib
+  - mkdocs-jupyter:
+      execute: false
+      include: ["*.ipynb"] # Default: ["*.py", "*.ipynb"]
+      include_requirejs: true
+      kernel_name: python3
+      execute_ignore: []
+
+extra:
+  generator: false
+  social:
+    - icon: fontawesome/brands/instagram 
+      link: https://www.instagram.com/resolvedortech/
+    - icon: fontawesome/brands/linkedin 
+      link: https://www.linkedin.com/in/thiagoyuki/
+
+copyright: Copyright &copy; 2026 Resolvedor Tech | Todos os direitos reservados.
+
+
+extra_javascript:
+  - javascripts/mathjax.js
+  - https://unpkg.com/mathjax@3/es5/tex-mml-chtml.js

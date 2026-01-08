@@ -1,0 +1,13 @@
+/* Force margin and padding to zero to prevent extra space around the logo */
+.md-header__button.md-logo {
+  margin: 0;
+  padding: 0;
+}
+
+/* Set the desired size for the logo image or SVG */
+.md-header__button.md-logo img,
+.md-header__button.md-logo svg {
+  height: 3.5rem; /* Adjust the height as needed, e.g., 3.5rem */
+  width: auto;
+  margin: 5px 5px;  /* Maintain aspect ratio */
+}
