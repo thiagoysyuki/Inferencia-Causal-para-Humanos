@@ -1,6 +1,6 @@
 # Inferência Causal para Humanos
 
-![Logo](docs/assets/imgs/logo.png)
+<img src="docs/assets/imgs/logo.png" width="200" alt="Inferência Causal para Humanos Logo">
 
 **Um guia prático para entender e aplicar inferência causal**
 
